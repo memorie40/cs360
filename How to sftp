@@ -1,0 +1,15 @@
+sftp -i /home/memorie/BitnamiKeys/AWSBYU.pem bitnami@ec2-52-33-245-25.us-west-2.compute.amazonaws.com
+Connected to ec2-52-33-245-25.us-west-2.compute.amazonaws.com.
+sftp> ls
+apps    htdocs  stack   
+sftp> cd htdocs
+sftp> ls
+503.html            applications.html   bitnami.css         favicon.ico         
+img                 index.html          index.html.de       index.html.default  
+index.html.en       index.html.es       index.html.he       index.html.ko       
+index.html.pt-br    index.html.ro       index.html.zh       
+sftp> lls
+Server.html  SSH connection phrase
+sftp> put Server.html 
+Uploading Server.html to /opt/bitnami/apache2/htdocs/Server.html
+
